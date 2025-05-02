@@ -26,7 +26,6 @@ model = KNeighborsClassifier(n_neighbors=3)
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
-# Print confusion matrix
 cm = confusion_matrix(y_test, y_pred)
 print("Confusion Matrix:\n", cm)
 
